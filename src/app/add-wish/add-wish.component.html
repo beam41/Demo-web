@@ -1,0 +1,27 @@
+<div class="row">
+        <div class="col-12">
+          <h1>เพิ่มคำอวยพร</h1>
+        </div>
+        <div class="col-sm-6 mr-1 mb-2">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Name</span>
+                  </div>
+                <input #name type="text" class="form-control" placeholder="name"/>
+            </div>
+        </div>
+        <div class="col-sm-6 mr-1 mb-2">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Text</span>
+                  </div>
+                <input #text type="text" class="form-control" placeholder="text"/>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary mr-2" (click)="add(name.value, text.value)">Add</button>
+            <button class="btn btn-secondary mr-2" (click)="goBack()">Back</button>
+        </div>
+</div>
+
+

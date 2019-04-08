@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-12 text-center">
+    <h1>ร่วมอวยพรปีใหม่</h1>
+    <button routerLink="/add-wish" routerLinkActive="router-link-active"  class="btn btn-primary">เพิ่มคำอวยพร</button>
+  </div>
+    <div class="col-lg-3" *ngFor= "let wish of wishes.reverse()">
+      <div class="wishbox">
+          <h6>{{wish.name}}</h6>
+          <span>{{wish.text}}</span>
+          <a routerLink="/edit-wish/{{wish.id}}"><i class="fas fa-edit"></i></a>
+      </div>
+    </div>
+</div>
+
+

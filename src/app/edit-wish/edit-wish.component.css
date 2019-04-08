@@ -1,0 +1,10 @@
+.wishbox {
+  border: 0.1em solid rgb(240, 240, 240);
+  border-radius: 0.5em;
+  background-color: rgb(240, 240, 240);
+  margin: 0.313em;
+  padding: 0.188em 0.625em;
+}
+.input-group-text {
+ width: 4.5em;
+}
